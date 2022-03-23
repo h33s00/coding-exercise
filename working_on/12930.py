@@ -1,7 +1,8 @@
 # 이상한 문자 만들기
 
+
 def solution(s):
-    answer = s # 원본 복사
+    answer = s  # 원본 복사
     word = s.strip().split(" ")
 
     # 이상한 공백도 들어가 버려서 그것 정리 ...
@@ -12,13 +13,13 @@ def solution(s):
 
     # print(word)
     # print(new)
-    
+
     for item in new:
         # 임시 변수 초기화
-        temp = ''
+        temp = ""
         for n in range(len(item)):
             # 짝수이거나 첫번째 문자열인 경우
-            if n%2 == 0 or n == 0: 
+            if n % 2 == 0 or n == 0:
                 temp = temp + item[n].upper()
             else:
                 temp = temp + item[n].lower()
