@@ -1,8 +1,9 @@
 # 행렬의 덧셈
 
+
 def solution(arr1, arr2):
-    n = len(arr1) #행
-    m = len(arr1[0]) #열
+    n = len(arr1)  # 행
+    m = len(arr1[0])  # 열
     # print(n, m)
     answer = []
     for i in range(n):
@@ -12,6 +13,7 @@ def solution(arr1, arr2):
             # print(temp)
         answer.append(temp)
     return answer
+
 
 # print(solution([[1],[2]], [[3],[4]]))
 # print(solution([[1,2],[2,3]], [[3,4],[5,6]]))
