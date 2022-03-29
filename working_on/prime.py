@@ -23,24 +23,24 @@ def solution(n):
 # print(solution(5))
 
 
-def solution2(n):
-    answer = 0
-    if n == 1:
-        return 0
-    elif n == 2:
-        print("2는 소수입니다.")
-        return 1
-    else:
-        for k in range(2, n):
-            print(f"{n}%{k}")
-            if n % k == 0:
-                print(f"{n}은 소수가 아닙니다.")
-                break
-            else:
-                if k == n - 1:
-                    print(f"{n}은 소수입니다.")
-                    answer += 1
-        return answer + solution2(n - 1)
+# def solution2(n):
+#     answer = 0
+#     if n == 1:
+#         return 0
+#     elif n == 2:
+#         print("2는 소수입니다.")
+#         return 1
+#     else:
+#         for k in range(2, n):
+#             print(f"{n}%{k}")
+#             if n % k == 0:
+#                 print(f"{n}은 소수가 아닙니다.")
+#                 break
+#             else:
+#                 if k == n - 1:
+#                     print(f"{n}은 소수입니다.")
+#                     answer += 1
+#         return answer + solution2(n - 1)
 
 
 # print(solution2(5))
@@ -52,24 +52,51 @@ def solution2(n):
 # 한번이라도 나누어 떨어진다면 소수가 아님!
 
 
-def solution3(n):
-    answer = 0
-    if n == 1:
-        return 0
-    elif n == 2:
-        print("2는 소수입니다.")
-        return 1
-    else:
-        for k in range(2, 10):
-            print(f"{n}%{k}")
-            if n % k == 0:
-                print(f"{n}은 소수가 아닙니다.")
-                break
-            else:
-                if k == 9:
-                    print(f"{n}은 소수입니다.")
-                    answer += 1
-        return answer + solution3(n - 1)
+# def solution3(n):
+#     answer = 0
+#     if n == 1:
+#         return 0
+#     elif n == 2:
+#         print("2는 소수입니다.")
+#         return 1
+#     else:
+#         for k in range(2, 10):
+#             print(f"{n}%{k}")
+#             if n % k == 0:
+#                 print(f"{n}은 소수가 아닙니다.")
+#                 break
+#             else:
+#                 if k == 9:
+#                     print(f"{n}은 소수입니다.")
+#                     answer += 1
+#         return answer + solution3(n - 1)
 
 
-print(solution3(10))
+# def isPrime(n):
+#     if n == 1:
+#         return 0
+#     elif n == 2:
+#         print(n)
+#         return 1
+#     else:
+#         answer = 0
+#         for k in range(2, 10):
+#             if n % k == 0:
+#                 break
+#             else:
+#                 if k >= n - 1:
+#                     answer = 1
+#                     print(n)
+#                     break
+#                 elif k == 9:
+#                     answer = 1
+#                     print(n)
+#                     break
+#         return answer
+
+
+# def solution(n):
+#     count = 0
+#     for i in range(2, n + 1):
+#         count = count + isPrime(i)
+#     return count
