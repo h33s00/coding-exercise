@@ -1,10 +1,11 @@
 # 이상한 문자 만들기
 
-
+# 테스트 케이스 몇 개 안되는데 이유를 모르겠는 코드
 # def solution(s):
-#     answer = ""
-#     word = s.strip().split()
-#     new = []
+#     answer = s
+#     word = s.strip().split(" ")
+#     print(word)
+
 #     for item in word:
 #         # 임시 변수 초기화
 #         temp = ""
@@ -14,30 +15,38 @@
 #                 temp = temp + item[n].upper()
 #             else:
 #                 temp = temp + item[n].lower()
-#         new.append(temp)
-
-#     for i in range(len(word)):
-#         if s[i] == " ":
-#             answer += " "
-#         else:
-#             for item in new:
-#                 for k in range(len(item)):
-#                     answer += item[k]
+#         print(temp)
+#         answer = answer.replace(item, temp, 1)
+#         print(answer)
 
 #     return answer
 
+# 함수 두개로 풀어보자!
+
+
+def strangify(word):
+    new_word = ""
+    for letter in range(len(word)):
+        if letter % 2 == 0 or letter == 0:
+            new_word = new_word + word[letter].upper()
+        else:
+            new_word = new_word + word[letter].lower()
+    return new_word
+
 
 def solution(s):
-    answer = ""
+
+    test = []
     for i in range(len(s)):
         if s[i] == " ":
-            answer += " "
+            if len(test) == 0:
+                continue
+            else:
+                "".join(test)
         else:
-            for k in range(i, len(s)):
-                if s[k] == " ":
-                    print(s[i:k])
-                    break
-    return answer
+            test.append(s[i])
+
+    return test
 
 
 # 테스트 케이스
@@ -49,7 +58,7 @@ def solution(s):
 # s = " tlqkf             w        hy        "
 # s = "AAAAAAAAAAA A A A A AAAAA AAA "
 # s = "A "
-s = "try hello world strys"
+s = "try hello world strys trys shellos"
 # s = "tlqkf sj skgksxp dhodlfjsl wlsWK "
 # s = "tlqkftoRldi"
 # s = "tlqkf tlqkf tlqkf"
