@@ -1,3 +1,5 @@
+// 2016년
+
 function solution(arr) {
   let result = [];
   arr.forEach((element) => {

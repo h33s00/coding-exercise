@@ -1,25 +1,16 @@
 # 이상한 문자 만들기
+# 최적의 풀이...
 
 
-def solution(s):
-    answer = s
-    word = s.strip().split(" ")
-    print(word)
-
-    for item in word:
-        # 임시 변수 초기화
-        temp = ""
-        for n in range(len(item)):
-            # 짝수이거나 첫번째 문자열인 경우
-            if n % 2 == 0 or n == 0:
-                temp = temp + item[n].upper()
-            else:
-                temp = temp + item[n].lower()
-        print(temp)
-        answer = answer.replace(item, temp, 1)
-        print(answer)
-
-    return answer
+def toWeirdCase(s):
+    return " ".join(
+        map(
+            lambda x: "".join(
+                [a.lower() if i % 2 else a.upper() for i, a in enumerate(x)]
+            ),
+            s.split(" "),
+        )
+    )
 
 
 # 테스트 케이스
@@ -40,7 +31,7 @@ def solution(s):
 # s = " Bye bYE MY lovE "
 # s = " bye bye bye bye by eee ee e   bye "
 s = "    e D ee e"
-a = solution(s)
+a = toWeirdCase(s)
 
 # 결과값 비교
 print(f"'{s}'", len(s), type(s))
