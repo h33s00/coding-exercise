@@ -35,18 +35,18 @@ def solution(participant, completion):
     return answer
 
 
-participant = ["leo", "kiki", "eden"]
+# participant = ["leo", "kiki", "eden"]
 # participant = ["marina", "josipa", "nikola", "vinko", "filipa"]
 # participant = ["mislav", "stanko", "mislav", "ana"]
 
 
-completion = ["eden", "kiki"]
+# completion = ["eden", "kiki"]
 # completion = ["josipa", "filipa", "marina", "nikola"]
 # completion = ["stanko", "ana", "mislav"]
 
 
-# participant = ["a", "a", "a", "b", "c"]
-# completion = ["a", "a", "b", "c"]
+participant = ["a", "a", "a", "b", "c"]
+completion = ["a", "a", "b", "c"]
 
 a = solution(participant, completion)
 print(a)

@@ -1,4 +1,6 @@
 # 모의고사
+
+
 def solution(answers):
     answer = []
     # 총 문제 수

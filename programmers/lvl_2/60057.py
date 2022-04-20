@@ -1,3 +1,6 @@
+# 문자열 압축
+
+
 def slicer(s, unit):
     slices = []
     back = ""

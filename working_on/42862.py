@@ -1,3 +1,6 @@
+# 체육복
+
+
 def solution(n, lost, reserve):
     # 정렬되지 않은 상태라면,
     lost = sorted(lost)
