@@ -21,3 +21,8 @@
 # print(chr(122))
 # print("C".islower())
 # print(up[-2])
+
+
+for i in range(5):
+    for k in range(i + 1, 5):
+        print(i, k)
