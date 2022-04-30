@@ -1,6 +1,5 @@
 # 가장 큰 수
 
-
 # 첫번째 시도
 from itertools import permutations
 
@@ -18,6 +17,8 @@ def solution(numbers):
 
     return answer
 
+
+# 시간초과 ! 순열로 풀 수 없다 !!
 
 # numbers = [6, 10, 2]
 # numbers = [0, 0, 0, 0]

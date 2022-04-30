@@ -22,14 +22,6 @@ def solution(numbers):
 
     return "".join(s_numbers)
 
-    # 자릿수별로 리스트화
-    # s = {}
-    # for i, v in enumerate(s_numbers):
-    #     if len(v) not in s:
-    #         s[len(v)] = [v]
-    #     else:
-    #         s[len(v)].append(v)
-
 
 # numbers = [6, 10, 2]
 numbers = [0, 0, 0, 0]
