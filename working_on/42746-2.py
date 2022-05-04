@@ -1,6 +1,9 @@
 # 가장 큰 수
 
 # 두번째 시도
+# 앞자리가 같은 경우 양옆의 수를 비교
+
+
 def solution(numbers):
     if sum(numbers) == 0:
         return "0"
@@ -10,7 +13,9 @@ def solution(numbers):
         key=lambda x: (int(x[0]), len(x)),
         reverse=True,
     )
+
     print(s_numbers)
+
     for i in range(len(s_numbers) - 1):
         a = s_numbers[i]
         b = s_numbers[i + 1]
@@ -23,11 +28,15 @@ def solution(numbers):
     return "".join(s_numbers)
 
 
+# 1-9 테스트케이스 실패
+
 # numbers = [6, 10, 2]
-numbers = [0, 0, 0, 0]
 # numbers = [3, 30, 34, 5, 9, 0]
-# 34, 3, 30 / 34, 3, 31, / 35, 34, 3
+numbers = [30, 3021]
+# numbers = [15, 151]
+# numbers = [0, 0, 70]
+# numbers = [0, 0, 0, 0]
+# numbers = [0, 0, 1, 0, 0]
 # numbers = [9, 998]
-# numbers = [7, 3999999, 3, 30, 38, 340, 389, 8]
-# numbers = [9, 9, 67300000, 439825, 4385042]
+
 print(solution(numbers))
