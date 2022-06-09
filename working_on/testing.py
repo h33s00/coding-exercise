@@ -23,6 +23,17 @@
 # print(up[-2])
 
 
-for i in range(5):
-    for k in range(i + 1, 5):
-        print(i, k)
+# for i in range(5):
+#     for k in range(i + 1, 5):
+#         print(i, k)
+
+
+# li = [True, True, True, False]
+# a = filter(False, li)
+
+
+# print(max("a", "b"))
+
+n = 3
+for i in range(1, n):
+    print(i)

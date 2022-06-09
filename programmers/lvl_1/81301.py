@@ -40,3 +40,7 @@ def solution(s):
 
     answer = int(answer)
     return answer
+
+
+s = "2three45sixseven"
+print(solution(s))
