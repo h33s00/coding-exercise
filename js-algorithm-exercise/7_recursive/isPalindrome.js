@@ -6,14 +6,14 @@
 
 // HELPER FUNCTION
 
-// function isPalindrome(word) {
-//   function reverse(s) {
-//     if (s.length === 0) return s;
-//     return s.slice(-1) + reverse(s.slice(0, -1));
-//   }
+function isPalindrome(word) {
+  function reverse(s) {
+    if (s.length === 0) return s;
+    return s.slice(-1) + reverse(s.slice(0, -1));
+  }
 
-//   return word == reverse(word) ? true : false;
-// }
+  return word == reverse(word) ? true : false;
+}
 
 // PURE RECURSION
 
