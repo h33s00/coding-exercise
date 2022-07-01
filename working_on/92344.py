@@ -1,4 +1,6 @@
 # 파괴되지 않은 건물
+
+
 def solution(board, skill):
     answer = 0
 

@@ -1,3 +1,5 @@
+# 위장
+
 from itertools import combinations
 
 
@@ -13,6 +15,8 @@ def solution(clothes):
     # 카테고리의 갯수
     n = len(wardrobe.keys())
 
+    print(wardrobe)
+
     answer = 0
     pc = []
 
@@ -21,7 +25,7 @@ def solution(clothes):
     for i in range(1, n + 1):
         pc.append(combinations(wardrobe.keys(), i))
 
-    # print(pc)
+    print(pc)
 
     for c in pc:
         # print(c)
@@ -35,8 +39,15 @@ def solution(clothes):
     return answer
 
 
-clothes = [["burberry", "outer"]]
-# clothes = [["a", "face"], ["b", "eye"], ["c", "top"], ["d", "bottom"], ["e", "outer"]]
+# clothes = [["burberry", "outer"]]
+clothes = [
+    ["a", "face"],
+    ["b", "eye"],
+    ["c", "top"],
+    ["d", "bottom"],
+    ["e", "outer"],
+    ["f", "face"],
+]
 
 # clothes = [
 #     ["yellowhat", "headgear"],
