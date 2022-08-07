@@ -1,4 +1,6 @@
 # 위장
+# 좆 구린 문제. 수학식 없으면 시간초과 되어 풀 수 없다.
+# 시간초과를 제외하면 밑의 코드는 모든 테스트케이스를 통과한다.
 
 from itertools import combinations
 
@@ -20,7 +22,7 @@ def solution(clothes):
     answer = 0
     pc = []
 
-    # 카테고리 갯수 별로 1-n개 선택 가능
+    # 카테고리 갯수 별로 1~N개 선택 가능
     # 예) 모자+상의 (2), 모자+상의+하의 (3) 등
     for i in range(1, n + 1):
         pc.append(combinations(wardrobe.keys(), i))
